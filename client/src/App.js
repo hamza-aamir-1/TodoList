@@ -27,7 +27,7 @@ function App() {
       <h1>Data</h1>
       <ol>
         {todoList.map((todo, key) => {
-          return <li key={key}>{todo.todoTitle} (Date Created: {todo.todoDate})</li>
+          return <li key={key}>{todo.todoTitle? todo.todoTitle : todo.title} (Date Created: {todo.todoDate})</li>
         })}
       </ol>
     </div>
